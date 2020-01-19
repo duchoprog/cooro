@@ -20,7 +20,7 @@ recordButton.addEventListener("click", startRecording);
 stopButton.addEventListener("click", stopRecording);
 
 function startRecording() {
-	console.log("startRecording() called");
+	//console.log("startRecording() called");
 
 	/*
 		Simple constraints object, for more advanced features see
@@ -35,7 +35,7 @@ function startRecording() {
 	*/
 
 	navigator.mediaDevices.getUserMedia(constraints).then(function(stream) {
-		__log("getUserMedia() success, stream created, initializing WebAudioRecorder...");
+		//__log("getUserMedia() success, stream created, initializing WebAudioRecorder...");
 
 		/*
 			create an audio context after getUserMedia is called
